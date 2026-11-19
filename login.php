@@ -15,5 +15,6 @@
     
     <input type="submit" value="Login">
 </form>
+<p> Don't have an account? <a href="register.php">Register here</a>.</p>
 </body>
 </html>
