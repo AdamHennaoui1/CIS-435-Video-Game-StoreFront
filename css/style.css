@@ -1,0 +1,219 @@
+/* quick page styling */
+
+* {
+margin: 0; 
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #101820;
+    color: white;
+}
+
+/* navigation bar styling */
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 8%;
+background-color: #172432;
+}
+
+.logo{
+    font-size: 26px;
+    font-weight: bold;
+    color: #48a9e6;
+}
+
+.nav-links a:hover {
+    color: #48a9e6;
+}
+
+.login-nav {
+    border: 1px solid #48a9e6;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.register-nav {
+    background-color: #1684cf;
+    padding: 10px 16px;
+    border-radius: 5px;
+}
+
+/*welcome section styling */
+.welcome {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 10%;
+    background: linear-gradient(135deg, #14283a, #101820);
+}
+
+.welcome-message {
+    max-width: 750px;
+}
+
+.welcome h1{
+    font-size: 42px;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+.welcome p{
+    font-size: 17px;
+    line-height: 1.6;
+    color: #c5d1dc;
+    margin-bottom: 30px;
+}
+
+/*welcome buttons styling */
+.welcome-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.primary-btn, .secondary-btn {
+display: inline-block;
+padding: 13px 25px;
+border-radius: 5px;
+text-decoration: none;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.primary-btn {
+    background-color: #1684cf;
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #0968a9;
+}
+
+.secondary-btn {
+     border: 1px solid #48a9e6;
+    color: white; 
+}
+.secondary-btn:hover {
+    background-color: #243c50;
+}
+
+/*about section styling */
+.about {
+    text-align: center;
+    padding: 65px 15%;
+    background-color: #172432;
+}
+
+.about h2, .features h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #48a9e6;
+}
+
+.about p {
+    color:#c5d1dc;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/*features section styling */
+.features {
+    text-align: center;
+    padding: 65px 8%;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.feature-box {
+    background-color: #1b2b3a;
+    padding: 30px 20px;
+    border-radius: 8px;
+    flex: 1;
+    max-width: 350px;
+    transition: 0.3s;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    background-color: #243b50;
+}
+
+.feature-box h3 {
+    margin-bottom: 15px;
+    color: #48a9e6;
+}
+
+.feature-box p {
+    color: #c5d1dc;
+    line-height: 1.6;
+}
+
+/* register section styling */
+.join {
+    text-align: center;
+    padding: 65px 20px;
+    background-color: #172432;
+}
+
+.join h2 {
+    margin-bottom: 15px;
+}
+
+.join p {
+    color: #c5d1dc;
+    margin-bottom: 25px;
+}
+
+/*footer section styling */
+footer {
+    text-align: center;
+    padding: 22px;
+    background-color: #0b1219;
+    color: #8b9aaa;
+    font-size: 14px;
+}
+
+/*mobile design - so people can register on their phones*/
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+    .nav-links a{
+        margin-left: 0;
+    }
+    .welcome {
+        font-size: 30px;
+    }
+
+    .feature-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-box {
+        width: 100%;
+    }
+    .welcome-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
