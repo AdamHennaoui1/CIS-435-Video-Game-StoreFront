@@ -12,3 +12,19 @@ session_start();
 </head>
 
 <body>
+
+<!-- Navigation bar -->
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Game Garage</h1>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.php">Home</a>
+            <a href="store.php">Store</a>
+            <a href="library.php">My Library</a>
+            <a href="dashboard.php">Dashboard</a>
+        </div>
+    </nav>
+</header>
