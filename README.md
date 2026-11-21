@@ -1,5 +1,5 @@
-# 🎮 GameStore - Online Game Store 🎮
-GameStore is an online video game store inspired by platforms like Steam. This project showcases a digital marketplace where users are able to explore different games, purchase their favorite games, and view their game library.
+# 🎮 Game Garage - Online Game Store 🎮
+Game Garage is an online video game store inspired by platforms like Steam. This project showcases a digital marketplace where users are able to explore different games, purchase their favorite games, and view their game library.
 
 # ✨ Features ✨
 - Store Catalog: Browse a collection of available games for purchase.

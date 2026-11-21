@@ -1,1 +1,1 @@
-console.log("Welcome to GameStore!");
+console.log("Welcome to Game Garage!");
