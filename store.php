@@ -37,6 +37,15 @@ session_start();
     </div>
 </section>
 
+<!-- Available games section -->
+<section class="games">
+    <h2>Available Games</h2>
+
+    <div class="game-container">
+
+    </div>
+</section>
+
 <!-- Footer -->
 <footer>
     <p>&copy; 2026 Game Garage. All rights reserved.</p>
