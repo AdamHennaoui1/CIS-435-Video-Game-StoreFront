@@ -1,5 +1,11 @@
 <?php
 session_start();
+
+// Connect to our database
+require_once 'database/connection.php';
+
+// Get all games from the database
+$games = $db->query("SELECT * FROM games")->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <!DOCTYPE html>
