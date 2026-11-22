@@ -48,6 +48,17 @@ $games = $db->query("SELECT * FROM games")->fetchAll(PDO::FETCH_ASSOC);
     <h2>Available Games</h2>
 
     <div class="game-container">
+        <!-- Display games from the database -->
+<?php foreach ($games as $game): ?>
+    <div class="game-card">
+        <h3><?php echo htmlspecialchars($game['title']); ?></h3>
+        <p>Genre: <?php echo htmlspecialchars($game['genre']); ?></p>
+        <p>Platform: <?php echo htmlspecialchars($game['platform']); ?></p>
+        <p>Price: $<?php echo number_format($game['price'], 2); ?></p>
+        <!-- Purchase button -->
+<button class="purchase-btn" type="button">Purchase</button>
+    </div>
+<?php endforeach; ?>
 
     </div>
 </section>

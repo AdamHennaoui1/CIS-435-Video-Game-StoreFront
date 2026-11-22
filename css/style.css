@@ -53,7 +53,7 @@ border-bottom: 2px solid var(--dark-purple);
 }
 
 .login-nav {
-    border: 1px solid var(-turqouise);
+    border: 1px solid var(--turqouise);
     padding: 8px 16px;
     border-radius: 5px;
 }
@@ -445,4 +445,63 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+}
+
+/* Game grid layout */
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Individual game cards */
+.game-card {
+    background-color: var(--dark-purple);
+    border: 1px solid var(--royal-purple);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Game titles */
+.game-card h3 {
+    color: var(--turqouise);
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+/* Game information */
+.game-card p {
+    color: var(--lavender);
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* Game store tablet layout */
+@media (max-width: 900px) {
+    .game-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Game store phone layout */
+@media (max-width: 600px) {
+    .game-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Purchase button styling */
+.purchase-btn {
+    background-color: var(--royal-purple);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Purchase button hover effect */
+.purchase-btn:hover {
+    background-color: var(--bright-purple);
 }
