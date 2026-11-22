@@ -28,3 +28,19 @@ session_start();
         </div>
     </nav>
 </header>
+
+<!-- Store welcome section -->
+<section class="welcome">
+    <div class="welcome-message">
+        <h1>Game Store</h1>
+        <p>Browse our collection of video games and find your next favorite game!</p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2026 Game Garage. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
