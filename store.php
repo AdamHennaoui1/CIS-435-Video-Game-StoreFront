@@ -44,3 +44,11 @@ session_start();
 
 </body>
 </html>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2026 Game Garage. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
