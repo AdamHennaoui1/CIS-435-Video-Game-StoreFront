@@ -38,7 +38,6 @@ $games = [
     ["Fortnite", "Battle Royale", "PC", 0.00],
     ["Rocket League", "Sports", "PC", 0.00],
     ["Call of Duty", "Shooter", "PC", 69.99],
-
     ["EA Sports FC 26", "Sports", "PS5", 69.99],
     ["Madden NFL 26", "Sports", "PS5", 69.99],
     ["NBA 2K26", "Sports", "PS5", 69.99],
@@ -58,7 +57,6 @@ $games = [
     ["Phasmophobia", "Horror", "PC", 19.99],
     ["Escape the Backrooms", "Horror", "PC", 9.99],
     ["Lethal Company", "Horror", "PC", 9.99],
-
     ["The Last of Us Part I", "Action", "PC", 59.99],
     ["God of War Ragnarok", "Action", "PS5", 69.99],
     ["Elden Ring", "RPG", "PC", 59.99],
