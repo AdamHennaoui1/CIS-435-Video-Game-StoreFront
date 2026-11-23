@@ -1,7 +1,7 @@
 <?php
 
-// Connect to our database
-require_once 'connection.php';
+// Connect to the database in this same folder
+require_once __DIR__ . '/connection.php';
 
 // Create the users table
 $db->exec("CREATE TABLE IF NOT EXISTS users (

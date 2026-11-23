@@ -1,12 +1,18 @@
 <?php
 session_start();
 
-// Connect to our database
 require_once 'database/connection.php';
+
+// Make sure the user is logged in
+if (!isset($_SESSION['user_id'])) {
+    header("Location: index.php");
+    exit;
+}
 
 // Get all games from the database
 $games = $db->query("SELECT * FROM games")->fetchAll(PDO::FETCH_ASSOC);
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -27,10 +33,9 @@ $games = $db->query("SELECT * FROM games")->fetchAll(PDO::FETCH_ASSOC);
         </div>
 
         <div class="nav-links">
-            <a href="index.php">Home</a>
             <a href="store.php">Store</a>
             <a href="library.php">My Library</a>
-            <a href="dashboard.php">Dashboard</a>
+            <a href="profile.php">Profile</a>
         </div>
     </nav>
 </header>
@@ -62,14 +67,6 @@ $games = $db->query("SELECT * FROM games")->fetchAll(PDO::FETCH_ASSOC);
 
     </div>
 </section>
-
-<!-- Footer -->
-<footer>
-    <p>&copy; 2026 Game Garage. All rights reserved.</p>
-</footer>
-
-</body>
-</html>
 
 <!-- Footer -->
 <footer>

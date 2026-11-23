@@ -24,10 +24,9 @@ require_once 'database/connection.php';
         </div>
 
         <div class="nav-links">
-            <a href="index.php">Home</a>
             <a href="store.php">Store</a>
             <a href="library.php">My Library</a>
-            <a href="dashboard.php">Dashboard</a>
+            <a href="profile.php">Profile</a>
         </div>
     </nav>
 </header>
@@ -39,3 +38,7 @@ require_once 'database/connection.php';
         <p>View all the games you have purchased from Game Garage!</p>
     </div>
 </section>
+
+<footer>
+    <p>&copy; 2026 Game Garage. All rights reserved.</p>
+</footer>
