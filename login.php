@@ -43,6 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </head>
 
 <body class="auth-page">
+    <?php include 'header.php'; ?>
 
     <div class="auth-container">
 
