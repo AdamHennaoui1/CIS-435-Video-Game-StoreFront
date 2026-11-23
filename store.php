@@ -46,8 +46,11 @@ $games = $db->query("SELECT * FROM games")->fetchAll(PDO::FETCH_ASSOC);
         <p>Genre: <?php echo htmlspecialchars($game['genre']); ?></p>
         <p>Platform: <?php echo htmlspecialchars($game['platform']); ?></p>
         <p>Price: $<?php echo number_format($game['price'], 2); ?></p>
-        <!-- Purchase button -->
-<button class="purchase-btn" type="button">Purchase</button>
+       //Buy button updated
+<form action="purchase.php" method="POST">
+    <input type="hidden" name="game_id" value="<?php echo $game['id']; ?>">
+    <button class="purchase-btn" type="submit">Buy</button>
+</form>
     </div>
 <?php endforeach; ?>
 
