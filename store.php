@@ -1,5 +1,5 @@
 <?php
-session_start();
+//session_start() is included in header.php, so we don't need to include it here again
 
 require_once 'database/connection.php';
 
@@ -24,21 +24,7 @@ $games = $db->query("SELECT * FROM games")->fetchAll(PDO::FETCH_ASSOC);
 </head>
 
 <body>
-
-<!-- Navigation bar -->
-<header>
-    <nav class="navbar">
-        <div class="logo">
-            <h1>Game Garage</h1>
-        </div>
-
-        <div class="nav-links">
-            <a href="store.php">Store</a>
-            <a href="library.php">My Library</a>
-            <a href="profile.php">Profile</a>
-        </div>
-    </nav>
-</header>
+<?php include 'header.php'; ?>
 
 <!-- Store welcome section -->
 <section class="welcome">
