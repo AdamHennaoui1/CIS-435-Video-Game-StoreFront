@@ -25,11 +25,11 @@ $stmt->execute([$user_id, $game_id]);
 if ($stmt->rowCount() > 0) {
     die("You already own this game.");
 }
-
+try {
 $stmt = $db->prepare("INSERT INTO purchases (user_id, game_id) VALUES (?, ?)");
-if ($stmt->execute([$user_id, $game_id])) {
+ ($stmt->execute([$user_id, $game_id]));
     echo "Purchase successful! You now own " . htmlspecialchars($game['title']) . ".";
-} else {
+} catch (PDOException $e) {
     echo "There was an error processing your purchase. Please try again.";
 }
 ?>
