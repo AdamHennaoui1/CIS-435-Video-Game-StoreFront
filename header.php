@@ -13,6 +13,7 @@ if (session_status() === PHP_SESSION_NONE) {
         </div>
 
         <div class="nav-links">
+            <a href="index.php">Home</a>
             <a href="store.php">Store</a>
             <a href="library.php">My Library</a>
             <a href="profile.php">Profile</a>

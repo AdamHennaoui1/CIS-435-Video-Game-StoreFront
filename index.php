@@ -17,22 +17,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 <body>
 
 
-
-<!-- Navigation/Search bar -->
-<header>
-    <nav>
-        <div class="logo">
-            <h1>Game Garage</h1>
-        </div>
-        <div class="nav-links">
-            <a href="index.php">Home</a>
-            <a href="#about">About</a>
-            <a href="login.php">Login</a>
-            <a href="register.php">Register</a>
-        </div>
-    </nav>
-</header>
-
 <!-- Welcome message -->
 <section class="welcome">
 <div class="welcome-message">

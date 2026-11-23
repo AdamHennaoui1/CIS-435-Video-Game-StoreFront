@@ -16,21 +16,6 @@ require_once 'database/connection.php';
 
 <body>
 
-<!-- Navigation bar -->
-<header>
-    <nav class="navbar">
-        <div class="logo">
-            <h1>Game Garage</h1>
-        </div>
-
-        <div class="nav-links">
-            <a href="store.php">Store</a>
-            <a href="library.php">My Library</a>
-            <a href="profile.php">Profile</a>
-        </div>
-    </nav>
-</header>
-
 <!-- Library welcome section -->
 <section class="welcome">
     <div class="welcome-message">
