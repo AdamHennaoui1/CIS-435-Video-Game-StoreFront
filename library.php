@@ -15,7 +15,7 @@ require_once 'database/connection.php';
 </head>
 
 <body>
-
+<?php include 'header.php'; ?>
 <!-- Library welcome section -->
 <section class="welcome">
     <div class="welcome-message">
