@@ -505,3 +505,230 @@ footer {
 .purchase-btn:hover {
     background-color: var(--bright-purple);
 }
+
+
+
+
+/* Game Garage Store Navigation */
+
+.site-header {
+    background-color: #171a21;
+    border-bottom: 1px solid #303642;
+    padding: 15px 8%;
+}
+
+.site-header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.site-header .logo {
+    color: #66c0f4;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.site-header .nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.site-header .nav-links a {
+    color: #c7d5e0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.site-header .nav-links a:hover {
+    color: #66c0f4;
+}
+
+/* Storefront */
+
+.store-page {
+    width: 90%;
+    max-width: 1400px;
+    margin: 30px auto;
+}
+
+.store-page .welcome {
+    padding: 40px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #1b2838, #23415b);
+    margin-bottom: 35px;
+}
+
+.store-page .welcome h1 {
+    font-size: 32px;
+    margin-top: 0;
+}
+
+.store-page .games h2 {
+    margin-bottom: 25px;
+}
+
+.store-page .game-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.store-page .game-card {
+    background-color: #202833;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+.store-page .game-card:hover {
+    transform: translateY(-4px);
+}
+
+.store-page .game-image {
+    height: 160px;
+    background: linear-gradient(135deg, #26384c, #365b78);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.store-page .game-image i {
+    font-size: 60px;
+    color: #66c0f4;
+}
+
+.store-page .game-info h3 {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.store-page .game-info p {
+    color: #c7d5e0;
+}
+
+.store-page .game-info .price {
+    color: #a4d007;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.store-page .purchase-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #66c0f4;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.store-page .purchase-btn:hover {
+    background-color: #8bd3ff;
+}
+
+@media (max-width: 600px) {
+    .site-header .navbar {
+        flex-direction: column;
+    }
+
+    .site-header .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+.error-message {
+    color: #ff6b6b;
+    background-color: rgba(255, 107, 107, 0.12);
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+
+/* PROFILE PAGE */
+
+.profile-page {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.profile-card {
+    width: 100%;
+    max-width: 500px;
+    background: #291447;
+    border: 1px solid #63369a;
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.profile-icon {
+    font-size: 70px;
+    color: #70e0dc;
+    margin-bottom: 15px;
+}
+
+.profile-card h1 {
+    color: #70e0dc;
+    margin-bottom: 30px;
+}
+
+.profile-info {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.profile-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #1a0b2b;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.profile-item > i {
+    font-size: 30px;
+    color: #70e0dc;
+}
+
+.profile-item h3 {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.profile-item p {
+    color: #d8b4ff;
+    font-size: 17px;
+}
+
+.logout-button {
+    display: inline-block;
+    background: #e74c3c;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.logout-button:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+}
