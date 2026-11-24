@@ -38,6 +38,11 @@ $games = $db->query("SELECT * FROM games")->fetchAll(PDO::FETCH_ASSOC);
 <section class="games">
     <h2>Available Games</h2>
 
+    <!-- Search bar -->
+<input type="text" id="searchInput"
+       placeholder="Search games..."
+       oninput="searchGames()">
+
     <div class="game-container">
         <!-- Display games from the database -->
 <?php foreach ($games as $game): ?>
