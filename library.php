@@ -1,5 +1,6 @@
 <?php
-//session_start() is included in header.php, so we don't need to include it here again
+session_start();
+
 // Connect to our database
 require_once 'database/connection.php';
 
