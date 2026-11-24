@@ -67,5 +67,8 @@ $games = $db->query("SELECT * FROM games")->fetchAll(PDO::FETCH_ASSOC);
     <p>&copy; 2026 Game Garage. All rights reserved.</p>
 </footer>
 
+<!-- Link JavaScript file -->
+<script src="js/script.js"></script>
+
 </body>
 </html>
