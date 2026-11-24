@@ -32,4 +32,6 @@ $stmt = $db->prepare("INSERT INTO purchases (user_id, game_id) VALUES (?, ?)");
 } catch (PDOException $e) {
     echo "There was an error processing your purchase. Please try again.";
 }
+
+
 ?>
