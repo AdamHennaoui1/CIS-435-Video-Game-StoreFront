@@ -1,7 +1,8 @@
-<!--homepage - before login -->
 <?php
-//session_start() is included in header.php, so we don't need to include it here again
+session_start();
+require_once 'database/connection.php';
 ?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -15,7 +16,12 @@
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-<?php include 'header.php'; ?>
+<header class="index-header">
+    <a href="index.php" class="index-logo">
+        <i class="fa-solid fa-trophy"></i>
+        Game Garage
+    </a>
+</header>
 
 <!-- Welcome message -->
 <section class="welcome">

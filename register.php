@@ -1,7 +1,5 @@
-
-
 <?php
-//session_start() is included in header.php, so we don't need to include it here again
+session_start();
 require_once 'database/connection.php';
 
 $error = "";
@@ -57,9 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </head>
 
 <body class="auth-page">
-<?php include 'header.php'; ?>
     <div class="auth-container">
-
         <a href="index.php" class="auth-logo">
             <i class="fa-solid fa-gamepad"></i>
             Game Garage

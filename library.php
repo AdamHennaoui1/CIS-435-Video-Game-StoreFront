@@ -4,7 +4,7 @@
  <?php
 require_once 'database/connection.php';
 $success = isset($_GET['success']) && $_GET['success'] == 1;
-<?php
+
 session_start();
 
 // Connect to our database

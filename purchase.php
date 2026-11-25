@@ -8,7 +8,7 @@ if (!isset($_SESSION['user_id'])) {
 
 $game_id = $_POST['game_id'] ?? '';
 if(empty($game_id)) {
-    die("No game was selected.")
+    die("No game was selected.");
 }
 
 $stmt = $db->prepare("SELECT * FROM games WHERE id = ?");

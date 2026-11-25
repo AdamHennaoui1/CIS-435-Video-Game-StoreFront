@@ -732,3 +732,39 @@ footer {
     background: #c0392b;
     transform: translateY(-2px);
 }
+
+/* Index page header only */
+.index-header {
+    width: 100%;
+    padding: 25px 60px;
+    background-color: #08080c;
+    border-bottom: 1px solid #512581;
+    display: flex;
+    align-items: center;
+}
+
+.index-logo {
+    text-decoration: none;
+    color: #70e0dc;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.index-logo i {
+    font-size: 35px;
+    color: #70e0dc;
+}
+
+/* Smaller screens */
+@media (max-width: 768px) {
+    .index-header {
+        padding: 20px;
+    }
+
+    .index-logo {
+        font-size: 30px;
+    }
+}

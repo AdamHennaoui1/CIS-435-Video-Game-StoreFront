@@ -1,6 +1,6 @@
 
 <?php
-
+session_start();
 require_once 'database/connection.php';
 
 // Make sure the user is logged in
